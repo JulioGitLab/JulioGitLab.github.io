@@ -1,0 +1,25 @@
+@import url(https://fonts.bunny.net/css?family=aldrich:400);
+
+body {
+   background-color: black;
+   color: whitesmoke;
+   font-family: 'Aldrich', sans-serif;
+}
+h1 {
+   color: goldenrod;
+   font-size: 3em;
+}
+header {
+   margin-bottom: 3em;
+   text-align: center;
+}
+main {
+   margin: 1em;
+   text-align: justify;
+}
+footer {
+   text-align: center;
+}
+footer hr {
+   margin: 3em 31em 0.3em;
+}
