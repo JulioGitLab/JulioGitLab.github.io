@@ -6,20 +6,42 @@ body {
    font-family: 'Aldrich', sans-serif;
 }
 h1 {
+   margin: 0.5em 0 0.3em;
    color: goldenrod;
-   font-size: 3em;
+   font-size: 2.7em;
 }
 header {
-   margin-bottom: 3em;
+   margin-bottom: 1.9em;
    text-align: center;
 }
+.card {
+   margin: 0 auto;
+   box-shadow: 0 11px 19px rgba(245,245,245,0.31), 0 5px 13px rgba(245,245,245,0.23);
+   width: 370px;
+   box-sizing: border-box;
+   transition-duration: 2s;
+}
+.card > img {
+   margin: 0px;
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+.card > h2 {
+   padding: 0px 11px 13px;
+}
+.card:hover {
+   box-shadow: 0 7px 17px rgba(245,245,245,0.31), 0 3px 11px rgba(245,245,245,0.23);
+   width: 270px;
+   font-size: smaller;
+}
 main {
-   margin: 1em;
+   margin: 0 1.9em;
    text-align: justify;
 }
 footer {
    text-align: center;
 }
 footer hr {
-   margin: 3em 31em 0.3em;
+   margin: 1.3em 37% 0.3em;
 }
