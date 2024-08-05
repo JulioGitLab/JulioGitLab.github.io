@@ -5,6 +5,9 @@ body {
    color: whitesmoke;
    font-family: 'Aldrich', sans-serif;
 }
+a {
+   text-decoration: none;
+}
 h1 {
    margin: 0.5em 0 0.3em;
    color: goldenrod;
@@ -21,14 +24,15 @@ header {
    box-sizing: border-box;
    transition-duration: 2s;
 }
-.card > img {
+.card > a > img {
    margin: 0px;
    display: block;
    max-width: 100%;
    height: auto;
 }
-.card > h2 {
+.card > a > h2 {
    padding: 0px 11px 13px;
+   color: whitesmoke;
 }
 .card:hover {
    box-shadow: 0 7px 17px rgba(245,245,245,0.31), 0 3px 11px rgba(245,245,245,0.23);
