@@ -44,7 +44,7 @@ a {
   width: 300px;
   margin: 0 auto 3rem;
   border-radius: 1.2em;
-  box-shadow: 0 5px 17px rgba(200, 200, 200, 0.37), 0 7px 17px rgba(200, 200, 200, 0.31);
+  box-shadow: -5px 5px 13px rgba(200, 200, 200, 0.37), 5px 5px 13px rgba(200, 200, 200, 0.31);
   transition-duration: 2s;
 }
 
@@ -72,7 +72,7 @@ a {
 main {
   display: flex;
   flex-direction: column;
-  gap: 1.7rem;
+  gap: 1.3em;
   width: 83%;
   text-align: justify;
   line-height: 1.3em;
@@ -105,4 +105,59 @@ footer {
   font-size: 1.3em;
   letter-spacing: 0.3px;
   transition-duration: 350ms;
+}
+
+@media (min-width: 540px) {
+  .card {
+    width: 350px;
+    margin: 0 auto 4.3rem;
+  }
+
+  .card>a>h2 {
+    font-size: 1.9rem;
+  }
+
+  .card:hover {
+    margin: 1.9rem auto 5.3rem;
+  }
+
+  main {
+    width: 79%;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    height: 75px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 940px) and (min-height: 600px) {
+  header {
+    padding-top: 2.3rem;
+  }
+
+  h1 {
+    padding: 3rem 1.3rem 2.3rem;
+    font-size: 5rem;
+    text-shadow: -2px 0 2px #000, 0 2px 2px #000, 2px 0 2px #000, 0 -2px 2px #000;
+  }
+
+  .card {
+    width: 375px;
+    box-shadow: -7px 7px 17px rgba(200, 200, 200, 0.37), 7px 7px 17px rgba(200, 200, 200, 0.31);
+  }
+
+  .card>a>h2 {
+    font-size: 2.3rem;
+  }
+
+  main {
+    width: 47%;
+    font-size: 1.7rem;
+  }
+
+  footer {
+    height: 89px;
+  }
 }
