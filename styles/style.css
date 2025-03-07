@@ -24,12 +24,16 @@ body {
 }
 
 header {
-  padding: 3rem 0 1.7rem;
+  padding: 2rem 0 1.1rem;
 }
 
 h1 {
+  border-radius: 47%;
+  padding: 2rem 1rem 1.7rem;
+  background-color: #171717;
   color: goldenrod;
   font-size: 3.7rem;
+  text-shadow: -1px 0 1px #000, 0 1px 1px #000, 1px 0 1px #000, 0 -1px 1px #000;
 }
 
 a {
@@ -50,18 +54,18 @@ a {
 }
 
 .card>a>h2 {
-  width: 90%;
+  width: 89%;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1.3rem 0;
   color: whitesmoke;
   text-align: center;
   line-height: 1.3em;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   letter-spacing: 0.1px;
 }
 
 .card:hover {
-  margin: 1rem auto 4.7rem;
+  margin: 1.3rem auto 4.7rem;
   transform: scale(1.1);
 }
 
