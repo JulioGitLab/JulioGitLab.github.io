@@ -13,24 +13,27 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-width: 350px;
+  min-height: 100vh;
+  align-items: center;
   background-color: black;
   color: whitesmoke;
   font-family: 'Aldrich', sans-serif;
 }
 
 header {
-  margin: 3rem 0 2rem;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
+  padding: 3rem 0 1.7rem;
 }
 
 h1 {
   color: goldenrod;
   font-size: 3.7rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .card {
@@ -58,13 +61,15 @@ h1 {
 }
 
 .card:hover {
-  margin: 1.3rem auto 4.7rem;
+  margin: 1rem auto 4.7rem;
   transform: scale(1.1);
 }
 
 main {
-  width: 80%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  width: 83%;
   text-align: justify;
   line-height: 1.3em;
   font-size: 1.3rem;
@@ -72,8 +77,9 @@ main {
 }
 
 footer {
-  margin: 1.3rem;
-  text-align: center;
+  height: 50px;
+  margin-top: auto;
+  align-content: center;
   font-family: monospace;
   letter-spacing: 0.2px;
 }
