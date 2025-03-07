@@ -72,10 +72,27 @@ main {
 }
 
 footer {
-  margin-bottom: 1rem;
+  margin: 1.3rem;
   text-align: center;
+  font-family: monospace;
+  letter-spacing: 0.2px;
 }
 
-footer hr {
-  margin: 2rem 23% 0.5rem;
+#juliogitlab {
+  color: goldenrod;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 250ms ease-out;
+}
+
+#juliogitlab:visited {
+  color: darkgoldenrod;
+}
+
+#juliogitlab:hover {
+  color: gold;
+  font-size: 1.3em;
+  letter-spacing: 0.3px;
+  transition-duration: 350ms;
 }
