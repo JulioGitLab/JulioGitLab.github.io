@@ -3,7 +3,7 @@
 :root {
   --header-bg-color: #222;
   --box-shadow-color: rgba(200, 200, 200, 0.37);
-  --description-text-color: #EFEFEF;
+  --about-text-color: #EFEFEF;
 }
 
 *,
@@ -49,13 +49,16 @@ h1 {
 }
 
 #welcome {
-  outline: 1px solid goldenrod;
   height: 100vh;
   align-content: center;
 }
 
 .card {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 79%;
+  max-width: 350px;
   margin: 5rem auto 0;
   border-radius: 1.2em;
   box-shadow: -5px 5px 13px var(--box-shadow-color), 5px 5px 13px var(--box-shadow-color);
@@ -63,32 +66,33 @@ h1 {
 }
 
 .card>figure>img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  margin-bottom: 1.3rem;
+  border-radius: 1.2em 1.2em 0 0;
 }
 
-.card>figure>figcaption {
-  padding: 0.5rem 0 0;
+.card>h2,
+.card>h3 {
+  color: var(--about-text-color);
   text-align: center;
-}
-
-.card>figure>figcaption>a {
-  font-size: 1.1em;
+  line-height: 1.3em;
+  letter-spacing: 0.2px;
 }
 
 .card>h2 {
-  width: 89%;
-  margin: 0 auto;
-  padding: 1.3rem 0;
-  color: var(--description-text-color);
-  text-align: center;
-  line-height: 1.3em;
+  width: 83%;
+  padding-bottom: 0.7rem;
   font-size: 1.7rem;
-  letter-spacing: 0.1px;
+}
+
+.card>h3 {
+  width: 89%;
+  padding-bottom: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .card:hover {
-  margin: 1.3rem auto 4.7rem;
   transform: scale(1.1);
 }
 
@@ -96,7 +100,7 @@ a {
   text-decoration: none;
 }
 
-#description {
+#about {
   display: flex;
   flex-direction: column;
   gap: 1.3em;
@@ -106,19 +110,32 @@ a {
   justify-content: center;
   text-align: justify;
   line-height: 1.3em;
-  color: var(--description-text-color);
+  color: var(--about-text-color);
   font-size: 1.3rem;
   letter-spacing: 0.1px;
 }
 
-footer {
-  height: 50px;
+#contact {
+  height: 100vh;
   align-content: center;
   text-align: center;
   color: white;
-  font-family: monospace;
   letter-spacing: 0.2px;
+}
+
+#contact>h2 {
+  margin-bottom: 1.3em;
+  font-size: 1.7rem;
+}
+
+#contact>ul {
+  line-height: 1.7em;
+  font-size: 1.3rem;
   animation: jump 3s infinite;
+}
+
+#contact>ul>li {
+  list-style-type: none;
 }
 
 #juliogitlab {
@@ -158,12 +175,12 @@ footer {
     margin: 1.9rem auto 5.3rem;
   }
 
-  #description {
+  #about {
     width: 73%;
     font-size: 1.5rem;
   }
 
-  footer {
+  #contact {
     height: 75px;
     font-size: 1.3rem;
   }
@@ -189,12 +206,12 @@ footer {
     font-size: 2.3rem;
   }
 
-  #description {
+  #about {
     width: 47%;
     font-size: 1.7rem;
   }
 
-  footer {
+  #contact {
     height: 89px;
   }
 }
