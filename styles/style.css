@@ -115,6 +115,68 @@ a {
   letter-spacing: 0.1px;
 }
 
+#showcase {
+  min-height: 100vh;
+  align-content: center;
+  width: 83%;
+  margin: 0 auto;
+  color: var(--about-text-color);
+}
+
+#showcase>h2 {
+  margin-bottom: 1.3em;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+#showcase>p {
+  margin-bottom: 1.3em;
+  text-align: justify;
+  line-height: 1.3em;
+  font-size: 1.3rem;
+  letter-spacing: 0.1px;
+}
+
+#demos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.3em;
+  /* margin-bottom: 1.3em; */
+}
+
+.demo-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 1.2em;
+  /* box-shadow: -5px 5px 13px var(--box-shadow-color), 5px 5px 13px var(--box-shadow-color); */
+  transition-duration: 1s;
+}
+
+.demo-tile>h3 {
+  width: 100%;
+  margin-bottom: 1.3em;
+  border-radius: 1.2em 1.2em 0 0;
+  padding: 0.7em 0 0.5em;
+  background-color: darkgoldenrod;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.demo-tile>img {
+  width: 100%;
+  height: auto;
+  background-color: var(--header-bg-color);
+  /* border-radius: 1.2em 1.2em 0 0; */
+}
+
+.demo-tile:hover {
+  transform: scale(1.1);
+}
+
 #contact {
   height: 100vh;
   align-content: center;
@@ -157,7 +219,7 @@ a {
   transition-duration: 350ms;
 }
 
-@media (min-width: 540px) {
+/* @media (min-width: 540px) {
   .card {
     width: 350px;
     margin: 0 auto 4.3rem;
@@ -184,9 +246,9 @@ a {
     height: 75px;
     font-size: 1.3rem;
   }
-}
+} */
 
-@media (min-width: 940px) and (min-height: 600px) {
+/* @media (min-width: 940px) and (min-height: 600px) {
   header {
     padding-top: 2.3rem;
   }
@@ -214,7 +276,7 @@ a {
   #contact {
     height: 89px;
   }
-}
+} */
 
 @keyframes jump {
   0% {
