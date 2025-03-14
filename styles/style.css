@@ -17,6 +17,7 @@
 html {
   font-family: 'Aldrich', sans-serif;
   font-size: 10px;
+  letter-spacing: 0.2px;
 }
 
 body {
@@ -27,16 +28,18 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   position: fixed;
   width: 100%;
   padding: 1.3rem 0;
   background-color: var(--header-bg-color);
+  z-index: 999;
 }
 
-h1 {
-  border-radius: 47%;
-  padding: 2rem 1rem 1.7rem;
+header>h1 {
+  margin: 0 auto 0.5rem;
+  border-radius: 37px 37px 23px 23px;
+  padding: 1.1rem 0.7rem 0.3rem;
   background-color: black;
   color: goldenrod;
   font-size: 3.7rem;
@@ -48,6 +51,19 @@ h1 {
     0 -1px 1px var(--header-bg-color);
 }
 
+header>a {
+  width: 50%;
+  padding-top: 0.7rem;
+  text-align: center;
+  color: goldenrod;
+  font-size: 1.7rem;
+}
+
+header>a:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
 #welcome {
   height: 100vh;
   align-content: center;
@@ -56,10 +72,10 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 79%;
+  width: 73%;
   max-width: 350px;
-  margin: 5rem auto 0;
+  margin: 0 auto;
+  align-items: center;
   border-radius: 1.2em;
   box-shadow: -5px 5px 13px var(--box-shadow-color), 5px 5px 13px var(--box-shadow-color);
   transition-duration: 2s;
@@ -77,7 +93,6 @@ h1 {
   color: var(--about-text-color);
   text-align: center;
   line-height: 1.3em;
-  letter-spacing: 0.2px;
 }
 
 .card>h2 {
@@ -112,29 +127,28 @@ a {
   line-height: 1.3em;
   color: var(--about-text-color);
   font-size: 1.3rem;
-  letter-spacing: 0.1px;
 }
 
 #showcase {
   min-height: 100vh;
-  align-content: center;
   width: 83%;
   margin: 0 auto;
+  padding-top: 20vh;
   color: var(--about-text-color);
 }
 
 #showcase>h2 {
-  margin-bottom: 1.3em;
+  margin: 0 11% 2em;
   text-align: center;
+  line-height: 1.3em;
   font-size: 1.7rem;
 }
 
 #showcase>p {
-  margin-bottom: 1.3em;
+  margin-bottom: 2em;
   text-align: justify;
   line-height: 1.3em;
   font-size: 1.3rem;
-  letter-spacing: 0.1px;
 }
 
 #demos {
@@ -149,7 +163,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 89%;
   border-radius: 1.5em;
   box-shadow: -3px 2px 11px var(--box-shadow-color), 3px 2px 11px var(--box-shadow-color);
   transition-duration: 1s;
@@ -180,16 +194,15 @@ a {
   align-content: center;
   text-align: center;
   color: white;
-  letter-spacing: 0.2px;
 }
 
 #contact>h2 {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.7em;
   font-size: 1.7rem;
 }
 
 #contact>ul {
-  line-height: 1.7em;
+  line-height: 1.9em;
   font-size: 1.3rem;
   animation: jump 3s infinite;
 }
@@ -202,12 +215,7 @@ a {
   color: goldenrod;
   font-size: 1.1em;
   font-weight: bold;
-  text-decoration: none;
   transition: 250ms ease-out;
-}
-
-#juliogitlab:visited {
-  color: darkgoldenrod;
 }
 
 #juliogitlab:hover {
