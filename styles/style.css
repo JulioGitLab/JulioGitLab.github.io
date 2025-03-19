@@ -3,7 +3,7 @@
 :root {
   --header-bg-color: #222;
   --box-shadow-color: rgba(200, 200, 200, 0.37);
-  --about-text-color: #EFEFEF;
+  --white-text-color: #EFEFEF;
   --h2-text-size: 1.7rem;
   --h3-text-size: 1.5rem;
   --p-text-size: 1.3rem;
@@ -26,7 +26,7 @@ html {
 body {
   min-width: 350px;
   background-color: black;
-  color: whitesmoke;
+  color: var(--white-text-color);
 }
 
 header {
@@ -94,7 +94,7 @@ header>a:hover {
 
 .card>h2,
 .card>h3 {
-  color: var(--about-text-color);
+  color: var(--white-text-color);
   text-align: center;
   line-height: 1.3em;
 }
@@ -129,7 +129,6 @@ a {
   justify-content: center;
   text-align: justify;
   line-height: 1.3em;
-  color: var(--about-text-color);
   font-size: var(--p-text-size);
 }
 
@@ -138,7 +137,6 @@ a {
   width: 83%;
   margin: 0 auto;
   padding-top: 19vh;
-  color: var(--about-text-color);
 }
 
 #showcase>h2 {
@@ -167,7 +165,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 89%;
   border-radius: 2em;
   transition-duration: 1s;
 }
@@ -198,7 +195,6 @@ a {
   min-height: 100vh;
   align-content: center;
   text-align: center;
-  color: white;
 }
 
 #contact>h2 {
