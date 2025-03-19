@@ -212,18 +212,33 @@ a {
   list-style-type: none;
 }
 
-#juliogitlab {
-  color: goldenrod;
+.contact-link {
   font-size: 1.1em;
   font-weight: bold;
   transition: 250ms ease-out;
 }
 
-#juliogitlab:hover {
-  color: gold;
+.contact-link:hover {
   font-size: 1.3em;
   letter-spacing: 0.3px;
   transition-duration: 350ms;
+}
+
+#juliogitlab {
+  color: goldenrod;
+}
+
+#juliogitlab:hover {
+  color: gold;
+}
+
+#linkedin {
+  color: mediumblue;
+  ;
+}
+
+#linkedin:hover {
+  color: blue;
 }
 
 @media (min-width: 540px) {
