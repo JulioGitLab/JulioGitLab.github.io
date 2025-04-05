@@ -134,7 +134,7 @@ a {
 
 #showcase {
   min-height: 100vh;
-  width: 83%;
+  width: 93%;
   margin: 0 auto;
   padding-top: 19vh;
 }
@@ -166,7 +166,6 @@ a {
   flex-direction: column;
   align-items: center;
   border-radius: 2em;
-  transition-duration: 1s;
 }
 
 .demo-tile>h3 {
@@ -185,10 +184,6 @@ a {
   border-radius: 0 0 1em 1em;
   background-color: var(--header-bg-color);
   box-shadow: -3px 2px 11px var(--box-shadow-color), 3px 2px 11px var(--box-shadow-color);
-}
-
-.demo-tile:hover {
-  transform: scale(1.1);
 }
 
 #contact {
@@ -283,6 +278,11 @@ a {
 
   .demo-tile {
     width: 47%;
+    transition-duration: 1s;
+  }
+
+  .demo-tile:hover {
+    transform: scale(1.3);
   }
 }
 
