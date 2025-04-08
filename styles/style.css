@@ -200,7 +200,7 @@ a {
 #contact>ul {
   line-height: 1.9em;
   font-size: var(--p-text-size);
-  animation: jump 3s infinite;
+  animation: jump 3s ease-in-out infinite;
 }
 
 #contact>ul>li {
@@ -342,21 +342,17 @@ a {
 
   5% {
     transform: translateY(-5px);
-    animation-timing-function: ease-out;
   }
 
   10% {
     transform: translateY(0);
-    animation-timing-function: ease-in;
   }
 
   15% {
     transform: translateY(-5px);
-    animation-timing-function: ease-out;
   }
 
   20% {
     transform: translateY(0);
-    animation-timing-function: ease-in;
   }
 }
