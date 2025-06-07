@@ -3,7 +3,7 @@
 :root {
   --header-bg-color: #222;
   --box-shadow-color: rgba(200, 200, 200, 0.37);
-  --white-text-color: #EFEFEF;
+  --white-text-color: #efefef;
   --h2-text-size: 1.7rem;
   --h3-text-size: 1.5rem;
   --p-text-size: 1.3rem;
@@ -18,7 +18,7 @@
 }
 
 html {
-  font-family: 'Aldrich', sans-serif;
+  font-family: "Aldrich", sans-serif;
   font-size: 10px;
   letter-spacing: 0.2px;
 }
@@ -39,7 +39,7 @@ header {
   z-index: 999;
 }
 
-header>h1 {
+header > h1 {
   margin: 0 auto 0.5rem;
   border-radius: 37px 37px 23px 23px;
   padding: 1.1rem 0.7rem 0.3rem;
@@ -55,7 +55,7 @@ header>h1 {
     0 -1px 1px var(--header-bg-color);
 }
 
-header>a {
+header > a {
   width: 50%;
   padding-top: 0.7rem;
   text-align: center;
@@ -63,7 +63,7 @@ header>a {
   font-size: 1.7rem;
 }
 
-header>a:hover {
+header > a:hover {
   color: gold;
   text-decoration: underline;
 }
@@ -81,31 +81,33 @@ header>a:hover {
   margin: 0 auto;
   align-items: center;
   border-radius: 1.2em;
-  box-shadow: -5px 5px 13px var(--box-shadow-color), 5px 5px 13px var(--box-shadow-color);
+  box-shadow:
+    -5px 5px 13px var(--box-shadow-color),
+    5px 5px 13px var(--box-shadow-color);
   transition-duration: 2s;
 }
 
-.card>figure>img {
+.card > figure > img {
   width: 100%;
   height: auto;
   margin-bottom: 1.3rem;
   border-radius: 1.2em 1.2em 0 0;
 }
 
-.card>h2,
-.card>h3 {
+.card > h2,
+.card > h3 {
   color: var(--white-text-color);
   text-align: center;
   line-height: 1.3em;
 }
 
-.card>h2 {
+.card > h2 {
   width: 83%;
   padding-bottom: 0.7rem;
   font-size: var(--h2-text-size);
 }
 
-.card>h3 {
+.card > h3 {
   width: 89%;
   padding-bottom: 1.1rem;
   font-size: var(--h3-text-size);
@@ -139,14 +141,14 @@ a {
   padding-top: 19vh;
 }
 
-#showcase>h2 {
+#showcase > h2 {
   margin: 0 11% 2em;
   text-align: center;
   line-height: 1.3em;
   font-size: var(--h2-text-size);
 }
 
-#showcase>p {
+#showcase > p {
   margin-bottom: 2em;
   text-align: justify;
   line-height: 1.5em;
@@ -168,22 +170,26 @@ a {
   border-radius: 2em;
 }
 
-.demo-tile>h3 {
+.demo-tile > h3 {
   width: 100%;
   border-radius: 1.1em 1.1em 0 0;
   padding: 0.7em 0 0.5em;
   background-color: darkgoldenrod;
   text-align: center;
   font-size: var(--h3-text-size);
-  box-shadow: -3px 2px 11px var(--box-shadow-color), 3px 2px 11px var(--box-shadow-color);
+  box-shadow:
+    -3px 2px 11px var(--box-shadow-color),
+    3px 2px 11px var(--box-shadow-color);
 }
 
-.demo-tile>video {
+.demo-tile > video {
   width: 100%;
   height: auto;
   border-radius: 0 0 1em 1em;
   background-color: var(--header-bg-color);
-  box-shadow: -3px 2px 11px var(--box-shadow-color), 3px 2px 11px var(--box-shadow-color);
+  box-shadow:
+    -3px 2px 11px var(--box-shadow-color),
+    3px 2px 11px var(--box-shadow-color);
 }
 
 #contact {
@@ -192,18 +198,18 @@ a {
   text-align: center;
 }
 
-#contact>h2 {
+#contact > h2 {
   margin-bottom: 1.7em;
   font-size: var(--h2-text-size);
 }
 
-#contact>ul {
+#contact > ul {
   line-height: 1.9em;
   font-size: var(--p-text-size);
   animation: jump 3s ease-in-out infinite;
 }
 
-#contact>ul>li {
+#contact > ul > li {
   list-style-type: none;
 }
 
@@ -229,7 +235,6 @@ a {
 
 #linkedin {
   color: mediumblue;
-  ;
 }
 
 #linkedin:hover {
@@ -243,13 +248,13 @@ a {
     --p-text-size: 1.5rem;
   }
 
-  header>h1 {
+  header > h1 {
     width: 100%;
     margin: 0 23% 0.5rem;
     font-size: 3rem;
   }
 
-  header>a {
+  header > a {
     width: 25%;
   }
 
@@ -268,7 +273,7 @@ a {
     padding-top: 29vh;
   }
 
-  #showcase>h2 {
+  #showcase > h2 {
     margin-bottom: 1.3em;
   }
 
@@ -297,12 +302,12 @@ a {
     padding: 2rem 0 1.1rem;
   }
 
-  header>h1 {
+  header > h1 {
     margin: 0 31% 1rem;
     font-size: 4.3rem;
   }
 
-  header>a {
+  header > a {
     font-size: 2rem;
   }
 
@@ -322,7 +327,7 @@ a {
     padding-top: 19vh;
   }
 
-  #showcase>h2 {
+  #showcase > h2 {
     margin: 0 17% 1.3em;
   }
 
