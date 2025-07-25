@@ -341,23 +341,14 @@ a {
 }
 
 @keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-
-  5% {
-    transform: translateY(-5px);
-  }
-
-  10% {
-    transform: translateY(0);
-  }
-
-  15% {
-    transform: translateY(-5px);
-  }
-
+  0%,
+  10%,
   20% {
     transform: translateY(0);
+  }
+
+  5%,
+  15% {
+    transform: translateY(-5px);
   }
 }
