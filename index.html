@@ -149,6 +149,30 @@
 
     <section id="contact">
       <h2>Do we make a good match?</h2>
+      <form method="POST" id="form">
+        <h3>Let's discuss your project</h3>
+        <!-- <input type="hidden" name="access_key" value="20143a31-e334-4ed3-88d6-a52e4f41dbb8" /> -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
+        <label>Name:<input type="text" name="name" required /></label>
+        <label>Email:<input type="email" name="email" required /></label>
+        <label>
+          What's your idea?
+          <textarea
+            name="message"
+            rows="5"
+            cols="33"
+            placeholder="I'm interested in..."
+            required
+          ></textarea>
+        </label>
+        <input type="checkbox" name="botcheck" class="hidden" />
+
+        <button type="submit">Send</button>
+
+        <div id="result"></div>
+      </form>
+      <h3>Or</h3>
       <ul>
         <li>
           Visit my
