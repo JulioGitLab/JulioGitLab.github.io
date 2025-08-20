@@ -1,4 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "eslint.validate": ["javascript", "html"]
+  "eslint.validate": ["javascript", "html"],
+  "cSpell.words": ["botcheck"]
 }

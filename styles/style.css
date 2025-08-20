@@ -294,6 +294,11 @@ a {
   transition-duration: 100ms;
 }
 
+#contact > form > div {
+  font-size: var(--p-text-size);
+  font-weight: bold;
+}
+
 #contact > ul {
   line-height: 1.9em;
   font-size: var(--p-text-size);
