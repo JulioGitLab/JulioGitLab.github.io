@@ -19,7 +19,7 @@
 
 html {
   font-family: "Aldrich", sans-serif;
-  font-size: 10px;
+  font-size: 10px; /* eslint-disable-line css/relative-font-units */
   letter-spacing: 0.2px;
 }
 
@@ -254,7 +254,7 @@ a {
 #contact > form textarea {
   width: 79vw;
   height: 7em;
-  resize: none;
+  resize: none; /* eslint-disable-line css/use-baseline */
 }
 
 #contact > form input.hidden {

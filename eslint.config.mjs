@@ -26,7 +26,16 @@ export default defineConfig([
     language: "markdown/gfm",
     extends: ["markdown/recommended"]
   },
-  { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
+  {
+    files: ["**/*.css"],
+    plugins: { css },
+    language: "css/css",
+    extends: ["css/recommended"],
+    rules: {
+      "css/relative-font-units": ["warn", { allowUnits: ["rem", "em"] }],
+      "css/use-baseline": ["warn", { available: "newly" }]
+    }
+  },
   {
     // @html-eslint/eslint-plugin
     ...html.configs["flat/recommended"],
